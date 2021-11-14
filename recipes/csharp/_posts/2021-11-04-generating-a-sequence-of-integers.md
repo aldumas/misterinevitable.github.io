@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  A method for generating a range of integers
+title:  A method for generating a sequence of integers
 code_lang: C#
 date:   2021-11-04 19:25:00 -0400
 tags: array linq csharp sequence range
@@ -30,7 +30,7 @@ results in an array or list, you can use
 [ToArray\<int\>()][docs-toarray] or [ToList\<int\>()][docs-tolist],
 respectively.
 
-If you need a different range of numbers, you can modify the lambda to
+If you need a different sequence of numbers, you can modify the lambda to
 transform the index instead of just returning it.
 
 This solution requires allocating an array of size `n`, which takes
