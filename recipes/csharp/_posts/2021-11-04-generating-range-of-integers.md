@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "C#: Generating a range of integers"
+title:  "Generating a range of integers"
+code_lang: C#
 date:   2021-11-04 19:25:00 -0400
-tags: array linq csharp recipe
+tags: array linq C# recipe sequence range
+toc: false
 ---
 
 
@@ -34,7 +36,7 @@ The expression `new int[n]` allocations on the heap an array of type `int[]` con
 
 [Select\<TSource, TResult\>()][docs-select] creates an object that transforms values of type `TSource` into other values of type `TResult`, given a delegate that performs the mapping of a single element. Like Python's `map()`, `Select()` doesn't actually do the iteration and mapping; it just returns an object that will perform the mapping as you request the values. You can also compose it with other operations like filtering, grouping, etc.
 
-We call `Select()` on the `int[]` which normally would not be available except that we added the `using System.Linq` statement. This brings in a number of extension methods which extend [IEnumerable\<T\>][docs-ienumerable-t]. Note that an array of type `T[]` implements `IEnumerable<T>`. When we call `Select()` on an `IEnumerable<T>`, `TSource` in the `Select()` generic method gets set to `T` from the `IEnumerable<T>` which, in our case, is `int`. `TResult` is determined by the type of the return value of the delegate that is passed into `Select()`.
+We call `Select()` on the `int[]`, giving it a lambda that returns the index of each item. This method normally would not be available except that we added the `using System.Linq` statement. This brings in a number of extension methods which extend [IEnumerable\<T\>][docs-ienumerable-t], and arrays qualify because `T[]` implements `IEnumerable<T>`. When we call `Select()` on an `IEnumerable<T>`, `TSource` in the `Select()` generic method gets set to `T` from the `IEnumerable<T>` which, in our case, is `int`. `TResult` is determined by the type of the return value of the delegate that is passed into `Select()`.
 
 `Select()` has an [overload][docs-select-overload] which takes a delegate that receives both the current value and the index of that value within the `IEnumerable<T>`. The lambda we are passing in, `(_, i) => i`, does nothing with the value and just returns its 2nd argument, the index, which means the return value of the delegate that gets created from this lambda must have the same type as `i`. This means `TResult` in the `Select()` generic method must be `int` since the `Select()` [overload][docs-select-overload] requires the 2nd parameter to be `int`. The compiler converts the lambda `(_, i) => i` into a delegate of type [Func\<int, int, int\>][docs-func] and also instantiates the overload just mentioned, namely `Select<int, int>(this IEnumerable<int> source, Func<int, int, int> selector)`.
 
