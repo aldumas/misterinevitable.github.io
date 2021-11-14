@@ -23,7 +23,7 @@ title: void (*fun)()                         # the main title
 tagline: Learning is polymorphic   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Come along with me as I learn about and collect interesting and
+  Come along with me as I learn and collect interesting and
   potentially useful bits of code.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
