@@ -1,17 +1,19 @@
 ---
 layout: post
-title:  "Generating a range of integers"
+title:  A method for generating a range of integers
 code_lang: C#
 date:   2021-11-04 19:25:00 -0400
-tags: array linq C# recipe sequence range
+tags: array linq csharp sequence range
 toc: false
+permalink: /:path/
+excerpt: 0, 1, 2, 3, 4, 5, ..., n - 1
 ---
-
 
 ## Problem
 
 You need the sequence of integers [0, n).
 
+<!-- more -->
 
 ## Solution
 

@@ -92,6 +92,8 @@ disqus:
 
 paginate: 10
 
+excerpt_separator: <!-- more -->
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
