@@ -5,7 +5,7 @@ code_lang: C#
 date:   2021-11-04 19:25:00 -0400
 tags: array linq csharp sequence range
 toc: false
-permalink: /:path/
+permalink: /posts/:year/:month/:day/:title
 excerpt: 0, 1, 2, 3, 4, 5, ..., n - 1
 ---
 
