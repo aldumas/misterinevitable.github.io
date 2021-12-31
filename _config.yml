@@ -20,7 +20,7 @@ timezone: America/Phoenix
 
 title: void (*fun)()                         # the main title
 
-tagline: Learning is polymorphic   # it will display as the sub-title
+tagline: Fun is polymorphic   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Come along with me as I learn and collect interesting and
@@ -30,7 +30,7 @@ description: >-                        # used by seo meta and the atom feed
 url: 'https://voidstar.fun'
 
 github:
-  username: aldumas             # change to your github username
+  username: misterinevitable             # change to your github username
 
 #twitter:
 #  username: twitter_username            # change to your twitter username
@@ -39,11 +39,11 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Adam Dumas
-  email: voidstar.fun@gmail.com             # change to your email address
+  email: misterinevitable+vsf@outlook.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/aldumas       # change to your github homepage
+    - https://github.com/misterinevitable       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
