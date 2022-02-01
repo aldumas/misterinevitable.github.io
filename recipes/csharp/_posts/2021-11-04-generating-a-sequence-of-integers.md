@@ -9,13 +9,12 @@ permalink: /posts/:year/:month/:day/:title
 excerpt: 0, 1, 2, 3, 4, 5, ..., n - 1
 ---
 
-## Problem
+# Problem
 
 You need the sequence of integers [0, n).
 
-<!-- more -->
 
-## Solution
+# Solution
 
 ```csharp
 using System.Linq;
@@ -52,7 +51,7 @@ Console.WriteLine(string.Join(' ', sequence));
 -->
 
 
-### How it works ###
+## How it works ##
 
 The expression `new int[n]` allocations on the heap an array of type
 `int[]` containing `n` instances of `int`. The parentheses that
