@@ -1,0 +1,4 @@
+@startuml
+Alice -> Bob : helloThere
+Alice <-- Bob : someValue
+@enduml
